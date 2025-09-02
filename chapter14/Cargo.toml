@@ -1,0 +1,12 @@
+[package]
+name = "chapter14"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# サブクレート add-one を依存関係として追加
+add-one = { path = "add-one" }
+rand = "0.9.2"
+
+[workspace]
+members = ["add-one"]
